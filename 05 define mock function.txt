@@ -10,3 +10,9 @@ const UserForm: React.FC<{onClick: () => void}> = ()=>{
 }
 
 render(<UserForm onClick={mock}/>)
+
+To check how often a mock function was called we can use the matcher toHaveBeenCalled
+expect(mock).toHaveBeenCalled()
+
+To check the arguments of the caller we can use the matcher toHaveBeenCalledWith:
+expect(mock).toHaveBeenCalledWith({name: "Jane"})
