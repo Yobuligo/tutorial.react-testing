@@ -1,0 +1,12 @@
+It seems that mock functions in jest a the same as in each mocking framework. 
+It catches the imported arguments and it returns how often it was called.
+
+A mock function can be created as follows:
+const mock = jest.fn();
+
+Now that function can be handed over e.g. as a callback to a component.
+const UserForm: React.FC<{onClick: () => void}> = ()=>{
+    return <></>
+}
+
+render(<UserForm onClick={mock}/>)
