@@ -7,3 +7,5 @@ list -> ul, li
 button -> button
 link -> a
 textbox -> input, type="text"
+
+full list: https://www.w3.org/TR/html-aria/#docconformance
